@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 5rem;
+    border: 2px white;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.clickable-box {
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 10px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.button-text{
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    div.header{
+        font-size: 60px;
+        margin-top: 10rem;
+    }
+    div.clickable-box {
+
+    }
+}
+
+@media screen and (min-width: 700px) {
+    div.header{
+        font-size: 60px;
+    }
+    .clickable-box {
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .clickable-box {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .clickable-box {
+        font-family: "Roboto", sans-serif;
+        color: black;
+    }
+}

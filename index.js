@@ -10,11 +10,20 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+const isDarkMode = () =>
+    window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if(isDarkMode()) {
+    scene.background = new THREE.Color(0x101218);
+} else {
+    scene.background = new THREE.Color(0xffffff);
+}
+
 const light = new THREE.AmbientLight( 0x404040, 25 ); // soft white light
 scene.add( light );
 
 
-camera.position.z = 5;
+camera.position.z = 4.2;
 camera.position.y = 5;
 camera.position.x = 5;
 camera.rotation.y = 0.70;
