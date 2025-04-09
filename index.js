@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 import {GLTFLoader} from "three/addons";
 
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 const loader = new GLTFLoader();
@@ -21,7 +20,6 @@ if(isDarkMode()) {
 
 const light = new THREE.AmbientLight( 0x404040, 25 ); // soft white light
 scene.add( light );
-
 
 camera.position.z = 4.2;
 camera.position.y = 5;

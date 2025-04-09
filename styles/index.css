@@ -5,6 +5,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.size-xl {
+    font-size: 2rem;
+}
+
 .container {
     display: flex;
     padding: 5rem;
@@ -32,18 +43,27 @@
         font-size: 60px;
         margin-top: 10rem;
     }
-    div.clickable-box {
-
+    .size-xl {
+        font-size: 3rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .button-item {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    .button-text {
+        font-size: 5rem;
+    }
+    body{
+        background-color: aqua;
     }
 }
 
-@media screen and (min-width: 700px) {
-    div.header{
-        font-size: 60px;
-    }
-    .clickable-box {
 
-    }
+div.header{
+    font-size: 60px;
 }
 
 @media (prefers-color-scheme: dark) {
